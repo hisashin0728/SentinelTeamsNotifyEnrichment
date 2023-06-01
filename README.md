@@ -2,6 +2,7 @@
 > このレポジトリは Microsoft Sentinel の Teams インシデント通知のサンプルテンプレートです。<p>
 
 ![image](https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/70bcbc7f-6b33-4425-a0c8-7c563c7e72dd)
+![image](https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/0178e15f-9ec8-496b-9772-6832b42f2d4c
 
 # Deploy to Azure
 > Azure 環境への適用については、以下ボタンを押して下さい。<p>
