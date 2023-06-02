@@ -25,6 +25,7 @@ jobs:
     - name: Run Microsoft Security DevOps Analysis
       uses: microsoft/security-devops-action@preview
       id: msdo
+      # For IaC Only
       with:
         categories: 'IaC'
 
