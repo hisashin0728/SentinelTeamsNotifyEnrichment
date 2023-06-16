@@ -1,8 +1,15 @@
 # SentinelTeamsNotifyEnrichment
 > このレポジトリは Microsoft Sentinel の Teams インシデント通知のサンプルテンプレートです。<p>
 
-![image](https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/70bcbc7f-6b33-4425-a0c8-7c563c7e72dd)
-![image](https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/0178e15f-9ec8-496b-9772-6832b42f2d4c)
+Microsoft Sentinel のインシデントトリガーを用いて、以下を実現します。
+  - Microsoft Teams のチャネルにアダプティブカードを用いたインシデント情報のメッセージ作成
+  - インシデント情報に付与されたコメントを Teams の返信として表示
+  - インシデント情報に含まれた各種エンティティ情報を HTML 表形式で Teams の返信として表示
+  - インシデント情報に含まれたエンティティが UPN 形式 (hnakada@xxx.co.jp) であれば、Microsoft Graph 経由で Azure AD の組織情報をルックアップして、ユーザー情報を Teams の返信として表示
+
+<img width="746" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/7b51f28b-df5f-4498-a2b7-9cd6fc89b31b">
+<img width="700" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/3cdfa5c0-d756-4ec0-b095-f703cfb51cad">
+
 
 # 事前準備
 本テンプレートは Microsoft Graph の RESTAPI を用いて Azure AD ユーザー情報取得を行います。
