@@ -6,7 +6,7 @@
 
 # Deploy to Azure
 > Azure 環境への適用については、以下ボタンを押して下さい。<p>
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FSentinelTeamsNotifyEnrichment%2Fmain%2FtemplateTeams.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FSentinelTeamsNotifyEnrichment%2Fmain%2FtemplateTeamsv2.json)
 
 # Requirement
 > 以下必要要件になります。<p>
