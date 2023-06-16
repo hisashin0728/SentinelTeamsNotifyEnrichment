@@ -5,7 +5,7 @@ Microsoft Sentinel のインシデントトリガーを用いて、以下を実�
   - Microsoft Teams のチャネルにアダプティブカードを用いたインシデント情報のメッセージ作成
   - インシデント情報に付与されたコメントを Teams の返信として表示
   - インシデント情報に含まれた各種エンティティ情報を HTML 表形式で Teams の返信として表示
-  - インシデント情報に含まれたエンティティが UPN 形式 (hnakada@xxx.co.jp) であれば、Microsoft Graph 経由で Azure AD の組織情報をルックアップして、ユーザー情報を Teams の返信として表示
+  - インシデント情報に含まれたエンティティのアカウント情報が UPN 形式 (hnakada@xxx.co.jp) であれば、Microsoft Graph 経由で Azure AD の組織情報をルックアップして、ユーザー情報を Teams の返信として表示
 
 <img width="746" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/7b51f28b-df5f-4498-a2b7-9cd6fc89b31b">
 <img width="700" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/3cdfa5c0-d756-4ec0-b095-f703cfb51cad">
@@ -41,3 +41,6 @@ Microsoft Graph を利用するために Azure AD のアプリケーション登
 <img width="956" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/c7651c51-b799-4167-b783-98f67dcc3613"><BR>
 - ロジック アプリ デザイナー画面より、Teams コネクタで接続する Teams/Channel ID を設定して下さい。
 <img width="649" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/83a113d6-00d1-495a-b32b-fa1c75482b26">
+- Azure AD に lookup させる際に自社ドメインかどうかの判定として、UPN のチェックをかけています。
+  以下箇所を自社の UPN ドメイン情報に変更して下さい。
+<img width="872" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/13cfb218-c67c-4904-ab39-5436cc5feddc">
