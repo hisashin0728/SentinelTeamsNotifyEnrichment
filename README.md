@@ -5,7 +5,9 @@ Microsoft Sentinel のインシデントトリガーを用いて、以下を実�
   - Microsoft Teams のチャネルにアダプティブカードを用いたインシデント情報のメッセージ作成
   - インシデント情報に付与されたコメントを Teams の返信として表示
   - インシデント情報に含まれた各種エンティティ情報を HTML 表形式で Teams の返信として表示
-  - インシデント情報に含まれたエンティティのアカウント情報が UPN 形式 (hnakada@xxx.co.jp) であれば、Microsoft Graph 経由で Azure AD の組織情報をルックアップして、ユーザー情報を Teams の返信として表示
+  - インシデント情報に含まれたエンティティのアカウント情報から、以下の条件については Microsoft Graph 経由で Azure AD の組織情報をルックアップして、ユーザー情報を Teams の返信として表示
+    - エンティティ(Account) 内に ``aadUserId`` 情報が含まれているケース (ADconnect 等でオンプレADなどを接続している場合)
+    - エンティティ(Account) 内に ``displayName`` 属性が自社ドメイン (microsoft.com) が含まれている場合 
 
 <img width="746" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/7b51f28b-df5f-4498-a2b7-9cd6fc89b31b">
 <img width="700" alt="image" src="https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/3cdfa5c0-d756-4ec0-b095-f703cfb51cad">
@@ -27,7 +29,7 @@ Microsoft Graph を利用するために Azure AD のアプリケーション登
 
 # Deploy to Azure
 > Azure 環境への適用については、以下ボタンを押して下さい。<p>
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FSentinelTeamsNotifyEnrichment%2Fmain%2FtemplateTeamsv2.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhisashin0728%2FSentinelTeamsNotifyEnrichment%2Fmain%2Ftemplatev3.json)
 
 # Requirement
 > 以下必要要件になります。<p>
