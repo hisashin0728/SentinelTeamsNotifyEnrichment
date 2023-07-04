@@ -269,7 +269,7 @@
                                             "Succeeded"
                                         ]
                                     },
-                                    "type": "AppendToStringVariable",
+                                    "type": "SetVariable",
                                     "inputs": {
                                         "name": "InitAad1",
                                         "value": "@body('ParseJSONAAD')?['properties']?['aadUserId']"
@@ -281,7 +281,7 @@
                                             "Succeeded"
                                         ]
                                     },
-                                    "type": "AppendToStringVariable",
+                                    "type": "SetVariable",
                                     "inputs": {
                                         "name": "InitAad2",
                                         "value": "@body('ParseJSONAAD')?['properties']?['displayName']"
