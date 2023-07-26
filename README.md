@@ -17,6 +17,10 @@ Microsoft Sentinel のインシデントトリガーを用いて、以下を実�
 本テンプレートは Microsoft Graph の RESTAPI を用いて Azure AD ユーザー情報取得を行います。
 Microsoft Graph を利用するために Azure AD のアプリケーション登録を行い、サービスプリンシパルを取得して下さい。
 
+参考情報）<BR>
+- Logic Apps から Graph API を実行する
+https://jpazinteg.github.io/blog/LogicApps/Integration-graphApi/
+
   - テナント ID、クライアント ID の取得
 ![image](https://github.com/hisashin0728/SentinelTeamsNotifyEnrichment/assets/55295601/9083e294-dd7d-4dfc-93d2-758e51f635ee)
 
