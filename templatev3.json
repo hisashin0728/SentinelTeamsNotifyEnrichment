@@ -175,7 +175,7 @@
                                                     "type": "AppendToStringVariable",
                                                     "inputs": {
                                                         "name": "aaduser",
-                                                        "value": "@body('ParseJSONAAD')?['properties']?['displayName']"
+                                                        "value": "@uriComponent(body('ParseJSONAAD')?['properties']?['displayName'])"
                                                     }
                                                 }
                                             },
@@ -187,7 +187,7 @@
                                                         "type": "AppendToStringVariable",
                                                         "inputs": {
                                                             "name": "aaduser",
-                                                            "value": "@body('ParseJSONAAD')?['properties']?['aadUserId']"
+                                                            "value": "@uriComponent(body('ParseJSONAAD')?['properties']?['aadUserId'])"
                                                         }
                                                     }
                                                 }
