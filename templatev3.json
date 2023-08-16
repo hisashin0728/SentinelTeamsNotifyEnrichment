@@ -175,7 +175,7 @@
                                                     "type": "AppendToStringVariable",
                                                     "inputs": {
                                                         "name": "aaduser",
-                                                        "value": "@uriComponent(body('ParseJSONAAD')?['properties']?['displayName'])"
+                                                        "value": "@variables('InitAad2')"
                                                     }
                                                 }
                                             },
@@ -187,7 +187,7 @@
                                                         "type": "AppendToStringVariable",
                                                         "inputs": {
                                                             "name": "aaduser",
-                                                            "value": "@uriComponent(body('ParseJSONAAD')?['properties']?['aadUserId'])"
+                                                            "value": "@variables('InitAad1')"
                                                         }
                                                     }
                                                 }
