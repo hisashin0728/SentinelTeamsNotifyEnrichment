@@ -145,7 +145,7 @@
                                 ]
                             },
                             "type": "Foreach",
-                          "runtimeConfiguration": {
+                            "runtimeConfiguration": {
                                 "concurrency": {
                                     "repetitions": 1
                                 }
