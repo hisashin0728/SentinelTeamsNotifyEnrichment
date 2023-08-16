@@ -107,7 +107,12 @@
                                     "Succeeded"
                                 ]
                             },
-                            "type": "Foreach"
+                            "type": "Foreach",
+                            "runtimeConfiguration": {
+                                "concurrency": {
+                                    "repetitions": 1
+                                }
+                            }
                         },
                         "ForEach2": {
                             "foreach": "@variables('IncidentComments')",
@@ -139,7 +144,12 @@
                                     "Succeeded"
                                 ]
                             },
-                            "type": "Foreach"
+                            "type": "Foreach",
+                          "runtimeConfiguration": {
+                                "concurrency": {
+                                    "repetitions": 1
+                                }
+                            }
                         },
                         "ForEachAAD": {
                             "foreach": "@variables('IncidentEntities')",
@@ -354,7 +364,13 @@
                                     "Succeeded"
                                 ]
                             },
-                            "type": "Foreach"
+                            "type": "Foreach",
+                            "runtimeConfiguration": {
+                                "concurrency": {
+                                    "repetitions": 1
+                                }
+                            }
+                        },
                         },
                         "IncidentComments": {
                             "runAfter": {
